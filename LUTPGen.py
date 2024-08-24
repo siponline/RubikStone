@@ -47,9 +47,9 @@ def generate_lut_pool(output_bytes, lut_size, num_luts):
 
 if __name__ == "__main__":
     # User input (hardcoded here for demonstration, replace with input() functions for actual use)
-    lut_size = 2**int(input("请输入查找表的输入长度（bits）："))  # 每个查找表的大小
-    output_bytes = int(input("请输入查找表的输出长度（bits）："))//8  # 每个查找表项要保存的输出字节数
-    num_luts = int(input("请输入查找表的数量："))  # 想要生成的查找表数量
+    lut_size = 2 ** int(input("Please enter the input length (bits) of the lookup table:"))  # The size of each lookup table
+    output_bytes = int(input("Please enter the output length (bits) of the lookup table:")) // 8  # The number of output bytes to be saved for each lookup table entry
+    num_luts = int(input("Please enter the number of lookup tables:"))  # The number of lookup tables to be generated
 
     # Call the function to generate the lookup table pool
     generate_lut_pool(output_bytes, lut_size, num_luts)
